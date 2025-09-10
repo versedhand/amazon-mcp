@@ -1,7 +1,10 @@
 import { loadAmazonCookiesFile } from './utils.js'
 
-const __dirname = new URL('.', import.meta.url).pathname
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 export const IS_BROWSER_VISIBLE = false
 
 /** Use local mock files instead of live scraping */
