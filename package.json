@@ -6,7 +6,7 @@
   "main": "./build/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc && chmod -R 755 ./build",
+    "build": "tsc",
     "clean": "rm mocks/*_202*"
   },
   "files": [
