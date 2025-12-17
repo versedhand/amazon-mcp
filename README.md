@@ -37,6 +37,9 @@ Build the project
 ```sh
 npm run build
 ```
+## Test account credentials
++1 (514) 570-0472
+Humanware123
 
 ## Claude Desktop Integration
 
