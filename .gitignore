@@ -217,4 +217,7 @@ dist/
 amazonCookies.json
 mocks/*_202*.html
 mocks/*_202*.txt
-!mcp-server-amazon.log
+
+# Removed macOS-specific symlinks (break Obsidian)
+claude_desktop_config.json
+mcp-server-amazon.log
