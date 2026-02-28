@@ -2,6 +2,26 @@
 
 This server allows you to interact with Amazon's services using the MCP (Model Context Protocol) framework. This lets you use your Amazon account through ChatGPT or Claude AI interfaces.
 
+## Contents
+
+| File | Purpose |
+|------|---------|
+| `README.md` | Documentation and usage instructions |
+| `CLAUDE.md` | Claude-specific project instructions |
+| `package.json` | Node.js dependencies and scripts |
+| `tsconfig.json` | TypeScript configuration |
+| `amazonCookies.example.json` | Example cookie format for authentication |
+| `src/` | TypeScript source code |
+| `src/index.ts` | MCP server entry point and tool definitions |
+| `src/config.ts` | Configuration and cookie loading |
+| `src/products.ts` | Product search and details functionality |
+| `src/orders.ts` | Order history retrieval |
+| `src/cart.ts` | Cart management (add, clear, view) |
+| `src/utils.ts` | Shared utility functions |
+| `build/` | Compiled JavaScript output |
+| `mocks/` | Test fixtures and mock data |
+| `LLM/` | LLM-specific documentation |
+
 ## Features
 
 - **Product search**: Search for products on Amazon

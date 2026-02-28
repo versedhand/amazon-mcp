@@ -220,4 +220,4 @@ mocks/*_202*.txt
 
 # Removed macOS-specific symlinks (break Obsidian)
 claude_desktop_config.json
-mcp-server-amazon.log
+mcp-server-amazon.log.dirinfo
