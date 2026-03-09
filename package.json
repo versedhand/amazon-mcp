@@ -1,13 +1,16 @@
 {
   "name": "mcp-server-amazon",
-  "private": true,
   "description": "Amazon Model Context Protocol Server",
   "version": "1.0.0",
   "main": "./build/index.js",
+  "bin": {
+    "amazon-mcp": "./build/index.js"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "clean": "rm mocks/*_202*"
+    "clean": "rm mocks/*_202*",
+    "prepublishOnly": "npm run build"
   },
   "files": [
     "build"
