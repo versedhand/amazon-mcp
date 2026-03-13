@@ -13,10 +13,11 @@ export const USE_MOCKS = false
 /** Export live scraping HTML to mocks for future use */
 export const EXPORT_LIVE_SCRAPING_FOR_MOCKS = true
 
-// Cookies in life-var, not code repo
-// LIFE_ROOT: /mnt/d/obs (local) or /srv/obs (server)
-const LIFE_ROOT = process.env.LIFE_ROOT || '/mnt/d/obs'
-export const COOKIES_FILE_PATH = `${LIFE_ROOT}/life-var/lib/amazon-etl/amazonCookies.json`
+// Cookies path: AMAZON_COOKIES_PATH env var, or constructed from LIFE_ROOT
+// LIFE_ROOT convention: ~/corpus/isaac-workspace-corpus (new) or /mnt/d/obs (legacy)
+const LIFE_ROOT = process.env.LIFE_ROOT || '/home'
+export const COOKIES_FILE_PATH = process.env.AMAZON_COOKIES_PATH
+  || `${LIFE_ROOT}/var/lib/amazon-etl/amazonCookies.json`
 /**
  * Go to the Amazon website and log in to your account
  * Then export cookies as JSON using a browser extension like "Cookie-Editor"
