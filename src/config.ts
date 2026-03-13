@@ -14,7 +14,7 @@ export const USE_MOCKS = false
 export const EXPORT_LIVE_SCRAPING_FOR_MOCKS = true
 
 // Cookies path: AMAZON_COOKIES_PATH env var, or constructed from LIFE_ROOT
-// LIFE_ROOT convention: ~/corpus/isaac-workspace-corpus (new) or /mnt/d/obs (legacy)
+// LIFE_ROOT convention: ~/corpus/isaac-workspace-corpus (new) or /home/rrobinson/corpus (legacy)
 const LIFE_ROOT = process.env.LIFE_ROOT || '/home'
 export const COOKIES_FILE_PATH = process.env.AMAZON_COOKIES_PATH
   || `${LIFE_ROOT}/var/lib/amazon-etl/amazonCookies.json`
